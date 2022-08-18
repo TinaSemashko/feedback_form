@@ -8,7 +8,7 @@ export default function Main() {
   }
 
   return (
-    <Form className="form" onSubmit={handleSubmit}>
+    <Form className="form border border-3 rounded p-5" onSubmit={handleSubmit}>
       <Form.Label>Your name</Form.Label>
       <Form.Control placeholder="Enter your name" />
       <Form.Group className="mb-3" controlId="formBasicEmail">

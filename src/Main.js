@@ -1,12 +1,24 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+//import GoogleMapReact from "google-map-react";
+
+//const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Main() {
   function handleSubmit() {
     alert("data was submitted");
   }
 
+  /*
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
+*/
   return (
     <Form className="form border border-3 rounded p-5" onSubmit={handleSubmit}>
       <Form.Label>Your name</Form.Label>

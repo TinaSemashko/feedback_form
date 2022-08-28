@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import "./App.css";
 import Main from "./Main.js";
 import Iframe from "react-iframe";
 import central from "../src/central.svg";
@@ -18,7 +17,6 @@ const SocialLinks = styled.div`
 `;
 
 const Line = styled.hr`
-  padding-bottom: 10px;
   border: none;
   border-top: 2px solid #333;
   box-shadow: 0 10px 10px -10px #8c8b8b inset;
@@ -47,7 +45,7 @@ const App = () => (
         </Balls>
       </div>
     </div>
-    <span className="p-5 hr-style">
+    <span className="p-1">
       <Line />
     </span>
     <footer>

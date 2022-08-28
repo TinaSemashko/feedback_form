@@ -1,8 +1,23 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import styled from "styled-components";
 
-import "./Main.css";
+const Butt = styled.button`
+  border-radius: 200px;
+  border: 0.1px solid;
+  background-color: gold;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 10px;
+`;
+
+const Header = styled.h1`
+  font-size: 24px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 100px;
+`;
 
 export default function Main() {
   function handleSubmit() {
@@ -11,7 +26,7 @@ export default function Main() {
 
   return (
     <>
-      <h1 className="hh mt-5">Reach out to us!</h1>
+      <Header>Reach out to us!</Header>
       <Form className="form mt-2 ps-5" onSubmit={handleSubmit}>
         <Form.Control placeholder="Your name*" className="mb-1" />
         <Form.Group className="mb-1" controlId="formBasicEmail">
@@ -21,9 +36,7 @@ export default function Main() {
           <Form.Control as="textarea" rows={3} placeholder="Your message*" />
         </Form.Group>
 
-        <Button type="submit" variant="flat">
-          Send message
-        </Button>
+        <Butt>Send message</Butt>
       </Form>
     </>
   );
